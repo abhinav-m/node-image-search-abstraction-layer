@@ -15,6 +15,7 @@ connect('RecentSearches')
     });
 
     app.use('/search', require('./routes/searchRouter'));
+    app.use('/recent/', require('./routes/recentSearchesRouter'));
 
     app.listen(port, () => {
       console.log(`Server listening on ${port}`);
