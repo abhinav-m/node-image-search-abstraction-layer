@@ -3,10 +3,14 @@ const fetch = require('node-fetch');
 
 const searchRouter = express.Router();
 
+// TODO: Handle offset parameter correctly
 const sendImagesResponse = (req, res) => {
+  const offset = req.query.offset || 0;
+  const NUM = 10;
+  const START = offset * 10 + 1;
   const { API_KEY, SEARCH_ENGINE_KEY } = process.env;
   const QUERY = req.params.term;
-  const URL = `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${SEARCH_ENGINE_KEY}&q=${QUERY}&searchType=image&fileType=jpg&imgSize=xlarge&alt=json`;
+  const URL = `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${SEARCH_ENGINE_KEY}&q=${QUERY}&searchType=image&fileType=jpg&imgSize=xlarge&alt=json&start=${START}&num=${NUM}`;
   // &start=1&num=2
   fetch(URL)
     .then(data => data.json())
