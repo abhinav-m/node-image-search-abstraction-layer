@@ -1,0 +1,33 @@
+{
+  "name": "image-search-abstraction-layer",
+  "version": "1.0.0",
+  "description": "A simple api for image searches.",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhinav-m/node-image-search-abstraction-layer.git"
+  },
+  "author": "Abhinav Mishra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhinav-m/node-image-search-abstraction-layer/issues"
+  },
+  "homepage": "https://github.com/abhinav-m/node-image-search-abstraction-layer#readme",
+  "keywords": [
+    "image",
+    "search"
+  ],
+  "devDependencies": {
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongodb": "^3.0.4",
+    "node-fetch": "^2.1.1"
+  }
+}

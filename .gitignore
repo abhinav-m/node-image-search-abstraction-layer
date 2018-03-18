@@ -1,0 +1,7 @@
+node_modules/
+
+.eslintrc
+
+config/config.json
+
+config/test.js
