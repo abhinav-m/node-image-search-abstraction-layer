@@ -2,6 +2,7 @@
   "development": {
     "API_KEY": "AIzaSyB6Cc1znhN15xauf0KQXmwfFR0DNc3A0iY",
     "SEARCH_ENGINE_KEY": "007526927458028151855:iwnag7-h3yi",
-    "PORT": 3000
+    "PORT": 3000,
+    "MONGODB_URI": "mongodb://localhost:27017/ImageSearch"
   }
 }
