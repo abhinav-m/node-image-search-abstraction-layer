@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>
+        ImageSearcher
+    </title>
+    <meta name='viewport' width='device-width, initial-scale=1.0'>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='styles.css'>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+
+<body>
+    <div class='container'>
+        <h2>Image search API</h2>
+        <div class='example__usage'>
+            <a href='http://localhost:3000/search?q=apples' target='_blank'>http://localhost:3000/search?q=apples</a>
+            <hr/>
+            <a href='http://localhost:3000/search?q=apples&offset=2' target='_blank'>http://localhost:3000/search?q=apples&offset=2</a>
+            <hr/>
+            <a href='http://localhost:3000/recent' target='_blank'>http://localhost:3000/recent</a>
+        </div>
+        <div class='example__output'>
+            <h4> Example output for search query apples:</h4>
+            <pre class='prettyprint'>
+            
+                    {
+                        items: [
+                        {
+                        title: "Apple Exports Estimated at 350K Tons | Financial Tribune",
+                        displayLink: "financialtribune.com",
+                        link: "https://financialtribune.com/sites/default/files/field/image/17january/04-zs-apple_exports_113-ab.jpg",
+                        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRheNS-sgIFEykrjAcVr3KNZoa_ZNq3uPS4wO-s_WFH7kFsyrojON9rUlM",
+                        context: "https://financialtribune.com/articles/economy-domestic-economy/76635/apple-exports-estimated-at-350k-tons"
+                        },
+                        {
+                        title: "Free photo: Nice Apples, Green, Eating Healthy - Free Image on ...",
+                        displayLink: "pixabay.com",
+                        link: "https://cdn.pixabay.com/photo/2013/11/20/23/00/nice-apples-214170_960_720.jpg",
+                        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH8DvuUtpk2jcuZz6DAap0XjDL9UrqLMZ47QjNmUI2NmZLQM3hS2DCbsrt",
+                        context: "https://pixabay.com/en/nice-apples-green-eating-healthy-214170/"
+                        },
+                        {
+                        title: "Pesticides: How 'bout washing them apples? - CNN",
+                        displayLink: "www.cnn.com",
+                        link: "https://cdn.cnn.com/cnnnext/dam/assets/150919153848-01-popular-fruits-apples-super-tease.jpg",
+                        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv7FXb4I-j7vYlPOcKYXAglB-xxeNehiQ5gZFjNKZdjloGRdYBHGMDZNI",
+                        context: "https://www.cnn.com/2017/10/25/health/apples-pesticides-wash-study/index.html"
+                        },
+                        {
+                        title: "Free photo: Apples, Red Apples, Fruit - Free Image on Pixabay ...",
+                        displayLink: "pixabay.com",
+                        link: "https://cdn.pixabay.com/photo/2017/07/24/00/06/apples-2533195_960_720.jpg",
+                        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrr7mZSa2l-J0OINEfuwBwIbZH-5yUv-LAtpQNetoLHzIGPEJk7Xbl2hkc",
+                        context: "https://pixabay.com/en/apples-red-apples-fruit-two-fruits-2533195/"
+                        },
+                        {
+                        title: "Supa Export - Google+",
+                        displayLink: "plus.google.com",
+                        link: "https://lh3.googleusercontent.com/-vOXEh0Ml9lc/VpzjkGMVP-I/AAAAAAAAAOU/LosiUIW-MXM/s0-d/Nutritional-Profile-of-Apples.jpg",
+                        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyN3l4dtrTVuknU3C8Q705kXdL-K_FVWfTz73DEddseXuxsKXB4hzDIXVL",
+                        context: "https://plus.google.com/114341068904548510942"
+                        },
+                        {
+                        title: "Kids Prefer Apple Most Among Fruits | Daily News",
+                        displayLink: "www.dailynewsz.com",
+                        link: "http://www.dailynewsz.com/wp-content/uploads/2017/10/Kids-Prefer-Apple-Most-Among-Fruits.jpg",
+                        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeFZcBCkRl6QTK6pZGTnXH2IQVkCvjvEhC6aBLAb5ZN2XItz1VFBtKvYyU",
+                        context: "http://www.dailynewsz.com/kids-prefer-apple-most-among-fruits/"
+                        },
+                        {
+                        title: "Apples: The Superfood's Health Benefits | Greatist",
+                        displayLink: "greatist.com",
+                        link: "https://greatist.com/sites/default/files/styles/article_main/public/wp-content/uploads/2011/11/Apples.jpg?itok=q57bL6ss",
+                        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOS7zw1ZfccPwMJ3RmE59MBikg0NEGicWu2NdiC-3FnBfavQdA-oiqZP3AAA",
+                        context: "https://greatist.com/health/superfood-apples"
+                        },
+                        {
+                        title: "Strawberries and apples stock image. Image of background - 86720643",
+                        displayLink: "www.dreamstime.com",
+                        link: "https://thumbs.dreamstime.com/b/strawberries-apples-fresh-eat-eat-fruit-to-maintain-health-86720643.jpg",
+                        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO8dV9hkzEmui53zf9rrYsEN35dRyUahhzI00wmgGMR1104KYUioMaWzwf",
+                        context: "https://www.dreamstime.com/stock-photo-strawberries-apples-fresh-eat-eat-fruit-to-maintain-health-image86720643"
+                        },
+                        {
+                        title: "Pink Lady Apples | The Fruit Company®",
+                        displayLink: "www.thefruitcompany.com",
+                        link: "http://pull01.thefruitcompany.netdna-cdn.com/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/p/i/pink-lady-apples_4.jpg",
+                        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeIZms7Ni6YiYjTNQOUkjdKbnz_4hiunKoqNQ1TrgC9O6qovkL4P34VHgNOQ",
+                        context: "http://www.thefruitcompany.com/pink-lady-apples"
+                        },
+                        {
+                        title: "10 Amazing Health Benefits Of Custard Apple (Sitaphal)",
+                        displayLink: "www.stylecraze.com",
+                        link: "http://cdn2.stylecraze.com/wp-content/uploads/2013/05/10-Amazing-Health-Benefits-Of-Custard-Apples.jpg",
+                        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrhUtjE-rGjzC9WcQ4NiTtqT92YqIqM8u2Ssour8y8AFbwkuZiU__D_aA",
+                        context: "http://www.stylecraze.com/articles/amazing-benefits-of-sugar-apples/"
+                        }
+                        ],
+                        length: 10
+                    }
+            
+        </pre>
+        </div>
+        <div class='example__output'>
+            <h4>Example output for /recent:</h4>
+            <pre class='prettyprint'>
+{
+    recent_searches: [
+    {
+    search_term: "dog pics",
+    on: "2018-3-19"
+    },
+    {
+    search_term: "dog love",
+    on: "2018-3-19"
+    },
+    {
+    search_term: "dog jokes",
+    on: "2018-3-19"
+    },
+    {
+    search_term: "funny dogs",
+    on: "2018-3-19"
+    },
+    {
+    search_term: "dogs > cats",
+    on: "2018-3-19"
+    },
+    {
+    search_term: "dogs",
+    on: "2018-3-19"
+    },
+    {
+    search_term: "fruits",
+    on: "2018-3-19"
+    },
+    {
+    search_term: "bananas",
+    on: "2018-3-19"
+    },
+    {
+    search_term: "oranges",
+    on: "2018-3-19"
+    },
+    {
+    search_term: "apples",
+    on: "2018-3-19"
+    }
+    ],
+    length: 10
+}                       
+</pre>
+        </div>
+    </div>
+</body>
+
+</html>

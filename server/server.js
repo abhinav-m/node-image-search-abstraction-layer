@@ -1,4 +1,5 @@
 require('./config/config');
+const path = require('path');
 const express = require('express');
 
 const connect = require('./db/connect');
@@ -13,6 +14,8 @@ connect('RecentSearches')
       req.db = db;
       next();
     });
+
+    app.use(express.static(path.join(__dirname, './public')));
 
     app.use('/search', require('./routes/searchRouter'));
     app.use('/recent/', require('./routes/recentSearchesRouter'));

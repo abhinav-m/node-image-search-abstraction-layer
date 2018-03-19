@@ -1,0 +1,27 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h2 {
+  color: brown;
+}
+
+h4 {
+  color: blue;
+}
+
+.example__output pre {
+  flex: 0 1;
+  max-height: 400px;
+  overflow: auto;
+  padding: 10px;
+}

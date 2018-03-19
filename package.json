@@ -2,8 +2,8 @@
   "name": "image-search-abstraction-layer",
   "version": "1.0.0",
   "description": "A simple api for image searches.",
-  "main": "config.js",
   "scripts": {
+    "start": "node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,10 +16,7 @@
     "url": "https://github.com/abhinav-m/node-image-search-abstraction-layer/issues"
   },
   "homepage": "https://github.com/abhinav-m/node-image-search-abstraction-layer#readme",
-  "keywords": [
-    "image",
-    "search"
-  ],
+  "keywords": ["image", "search"],
   "devDependencies": {
     "eslint": "^4.19.0",
     "eslint-config-airbnb-base": "^12.1.0",
