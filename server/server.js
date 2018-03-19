@@ -5,9 +5,10 @@ const express = require('express');
 const connect = require('./db/connect');
 
 const port = process.env.PORT || 3000;
+const dbName = process.env.DB_NAME;
 const app = express();
 
-connect('RecentSearches')
+connect(dbName)
   .then(db => {
     // Middleware for db
     app.use((req, res, next) => {
